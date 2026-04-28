@@ -18,7 +18,9 @@ public class LoginServlet extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		request.getRequestDispatcher("link.html").include(request, response);
-
+		
+		
+		//Bug Fix code in local working tree
 		String userid = request.getParameter("userid");
 		String password = request.getParameter("password");
 
